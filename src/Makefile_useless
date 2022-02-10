@@ -1,0 +1,15 @@
+OBJS = main.o Drivingforcesolver.o Orientationfieldsolver.o Phasefieldsolver.o Settings.o \
+Solutefieldsolver.o Boundaryconditions.o MPIcommunication.o Fieldinitializer.o Fieldwriter.o\
+Temperaturefieldsolver.o
+
+CC = mpicxx
+CFLAGS += -c -Wall -g
+
+MPF:$(OBJS)
+	$(CC) $^ -o $@
+
+%.o:%.cpp
+	$(CC) $^ $(CFLAGS) -o $@
+
+clean:
+	$(RM) *.o MPF -r

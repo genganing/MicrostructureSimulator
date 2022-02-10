@@ -1,0 +1,14 @@
+Nx
+Ny
+interface thickness
+grid size
+time step
+initial concentration
+interfacial energy
+interfacial mobility
+kinetic anisotropy mobility
+static anisotropy mobility
+solid diffusion coefficient
+liquid diffusion coefficient
+halo layer thickness (dx)
+Pytorch module path
